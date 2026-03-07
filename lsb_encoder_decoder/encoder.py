@@ -4,7 +4,7 @@ import logging
 class Encoder:
   image: List[List[List[str]]]
   secret_message: str
-  mask = 11111111
+  mask = 11111111 #7bit, need the least significant one (from our words)
   logging.basicConfig(level=logging.INFO,
                       format="%(asctime)s    |   %(levelname)s [%(name)s - %(funcName)s]   |   %(message)s",
                       datefmt="%d-%m-%Y %H:%M:%S",

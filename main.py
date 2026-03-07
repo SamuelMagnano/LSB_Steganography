@@ -20,6 +20,24 @@ def image_to_bits(image: List[List[List[Any]]]) -> List[List[List[str]]]:
         cont += 1
   logging.info(f"Evaluated {cont} RGB channel values")
   return image
+
+def generate_encoded_image(encoded_image: List[List[List[Any]]]) -> bool:
+  cont = 0
+  for row in range(len(encoded_image)):
+    for rgb_channel in range(len(encoded_image[row])):
+      for idx,value in enumerate(encoded_image[row][rgb_channel]):
+        #print(f"original value: {value}, bin: {bin(value)}, 8_bit_bin: {bin(value).split('b')[1].zfill(8)}, 8_bit_bin_to_int: {int(bin(value).split('b')[1].zfill(8),2)}")
+        encoded_image[row][rgb_channel][idx] = int(encoded_image[row][rgb_channel][idx],2)
+        cont += 1
+  logging.info(f"Evaluated {cont} RGB channel values")
+  if cont <= 0: 
+    logging.warning("Error converting the bits back to integers!")
+    raise Exception("Error while converting the bits back to integers!")
+  else:
+    pixels_array = np.array(encoded_image, dtype=np.uint8)
+    new_image = Image.fromarray(pixels_array, 'RGB')
+    new_image.save("encoded_image.png")
+    return True
   
 
 if __name__ == "__main__":
@@ -32,7 +50,7 @@ if __name__ == "__main__":
   bit_pixels = image_to_bits(pixels.tolist())
   logging.info(f"image_to_bits completed!")
   del pixels
-  print(bit_pixels[0][0:6])
+  #print(bit_pixels[0][0:6])
   
   encoder = Encoder()
   if encoder.set_image(bit_pixels):
@@ -46,4 +64,11 @@ if __name__ == "__main__":
         logging.error("An error occurred while encoding the secret message inside the given image")
         exit()
   
-  print(encoded_image[0][0:6])
+  del bit_pixels
+  #print(encoded_image[0][0:6])
+  logging.info("Generating encoded image")
+  if generate_encoded_image(encoded_image):
+    logging.info("Encoded image generated!")
+  else:
+    logging.error("Error while generating the encoded image!")
+    exit()

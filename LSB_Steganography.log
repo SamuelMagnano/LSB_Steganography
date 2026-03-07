@@ -1,78 +1,32 @@
-07-03-2026 23:33:52    |   INFO [root - <module>]   |   Calling image_to_bits
-07-03-2026 23:33:53    |   INFO [root - image_to_bits]   |   Evaluated 631584 RGB channel values
-07-03-2026 23:33:53    |   INFO [root - <module>]   |   image_to_bits completed!
-07-03-2026 23:33:53    |   INFO [root - <module>]   |   Image correctly setted inside the Encoder
-07-03-2026 23:33:56    |   INFO [root - set_secret_message]   |   Secret messagge loaded correctly!
-07-03-2026 23:33:56    |   INFO [root - <module>]   |   Secret message correctly setted inside the Encoder
-07-03-2026 23:33:56    |   INFO [root - encode]   |   Converting the secret message to binary (UTF-8)
-07-03-2026 23:33:56    |   INFO [root - message_to_bin]   |   Binary message: 0100100001101001
-07-03-2026 23:33:56    |   INFO [root - encode]   |   Conversion done!
-07-03-2026 23:33:56    |   INFO [root - encode]   |   Encoding the secret message inside the image
-07-03-2026 23:33:56    |   INFO [root - encode]   |   Evaluated 16 RGB channel values
-07-03-2026 23:33:56    |   INFO [root - encode]   |   Encoding completed!
-07-03-2026 23:33:56    |   INFO [root - <module>]   |   Secret message correctly encoded inside the image
-07-03-2026 23:35:07    |   INFO [root - <module>]   |   Calling image_to_bits
-07-03-2026 23:35:07    |   INFO [root - image_to_bits]   |   Evaluated 631584 RGB channel values
-07-03-2026 23:35:07    |   INFO [root - <module>]   |   image_to_bits completed!
-07-03-2026 23:35:07    |   INFO [root - <module>]   |   Image correctly setted inside the Encoder
-07-03-2026 23:35:14    |   INFO [root - set_secret_message]   |   Secret messagge loaded correctly!
-07-03-2026 23:35:14    |   INFO [root - <module>]   |   Secret message correctly setted inside the Encoder
-07-03-2026 23:35:14    |   INFO [root - encode]   |   Converting the secret message to binary (UTF-8)
-07-03-2026 23:35:14    |   INFO [root - message_to_bin]   |   Binary message: 0110100001101001
-07-03-2026 23:35:14    |   INFO [root - encode]   |   Conversion done!
-07-03-2026 23:35:14    |   INFO [root - encode]   |   Encoding the secret message inside the image
-07-03-2026 23:35:14    |   INFO [root - encode]   |   Evaluated 16 RGB channel values
-07-03-2026 23:35:14    |   INFO [root - encode]   |   Encoding completed!
-07-03-2026 23:35:14    |   INFO [root - <module>]   |   Secret message correctly encoded inside the image
-07-03-2026 23:35:49    |   INFO [root - <module>]   |   Calling image_to_bits
-07-03-2026 23:35:49    |   INFO [root - image_to_bits]   |   Evaluated 631584 RGB channel values
-07-03-2026 23:35:49    |   INFO [root - <module>]   |   image_to_bits completed!
-07-03-2026 23:35:49    |   INFO [root - <module>]   |   Image correctly setted inside the Encoder
-07-03-2026 23:35:59    |   INFO [root - set_secret_message]   |   Secret messagge loaded correctly!
-07-03-2026 23:35:59    |   INFO [root - <module>]   |   Secret message correctly setted inside the Encoder
-07-03-2026 23:35:59    |   INFO [root - encode]   |   Converting the secret message to binary (UTF-8)
-07-03-2026 23:35:59    |   INFO [root - message_to_bin]   |   Binary message: 0110100001101001
-07-03-2026 23:35:59    |   INFO [root - encode]   |   Conversion done!
-07-03-2026 23:35:59    |   INFO [root - encode]   |   Encoding the secret message inside the image
-07-03-2026 23:35:59    |   INFO [root - encode]   |   Evaluated 16 RGB channel values
-07-03-2026 23:35:59    |   INFO [root - encode]   |   Encoding completed!
-07-03-2026 23:35:59    |   INFO [root - <module>]   |   Secret message correctly encoded inside the image
-07-03-2026 23:36:32    |   INFO [root - <module>]   |   Calling image_to_bits
-07-03-2026 23:36:32    |   INFO [root - image_to_bits]   |   Evaluated 631584 RGB channel values
-07-03-2026 23:36:32    |   INFO [root - <module>]   |   image_to_bits completed!
-07-03-2026 23:36:32    |   INFO [root - <module>]   |   Image correctly setted inside the Encoder
-07-03-2026 23:36:36    |   INFO [root - set_secret_message]   |   Secret messagge loaded correctly!
-07-03-2026 23:36:36    |   INFO [root - <module>]   |   Secret message correctly setted inside the Encoder
-07-03-2026 23:36:36    |   INFO [root - encode]   |   Converting the secret message to binary (UTF-8)
-07-03-2026 23:36:36    |   INFO [root - message_to_bin]   |   Binary message: 0100100001101001
-07-03-2026 23:36:36    |   INFO [root - encode]   |   Conversion done!
-07-03-2026 23:36:36    |   INFO [root - encode]   |   Encoding the secret message inside the image
-07-03-2026 23:36:36    |   INFO [root - encode]   |   Evaluated 16 RGB channel values
-07-03-2026 23:36:36    |   INFO [root - encode]   |   Encoding completed!
-07-03-2026 23:36:36    |   INFO [root - <module>]   |   Secret message correctly encoded inside the image
-07-03-2026 23:38:13    |   INFO [root - <module>]   |   Calling image_to_bits
-07-03-2026 23:38:14    |   INFO [root - image_to_bits]   |   Evaluated 631584 RGB channel values
-07-03-2026 23:38:14    |   INFO [root - <module>]   |   image_to_bits completed!
-07-03-2026 23:38:14    |   INFO [root - <module>]   |   Image correctly setted inside the Encoder
-07-03-2026 23:38:17    |   INFO [root - set_secret_message]   |   Secret messagge loaded correctly!
-07-03-2026 23:38:17    |   INFO [root - <module>]   |   Secret message correctly setted inside the Encoder
-07-03-2026 23:38:17    |   INFO [root - encode]   |   Converting the secret message to binary (UTF-8)
-07-03-2026 23:38:17    |   INFO [root - message_to_bin]   |   Binary message: 0110100001101001
-07-03-2026 23:38:17    |   INFO [root - encode]   |   Conversion done!
-07-03-2026 23:38:17    |   INFO [root - encode]   |   Encoding the secret message inside the image
-07-03-2026 23:38:17    |   INFO [root - encode]   |   Evaluated 16 RGB channel values
-07-03-2026 23:38:17    |   INFO [root - encode]   |   Encoding completed!
-07-03-2026 23:38:17    |   INFO [root - <module>]   |   Secret message correctly encoded inside the image
-07-03-2026 23:39:05    |   INFO [root - <module>]   |   Calling image_to_bits
-07-03-2026 23:39:05    |   INFO [root - image_to_bits]   |   Evaluated 631584 RGB channel values
-07-03-2026 23:39:05    |   INFO [root - <module>]   |   image_to_bits completed!
-07-03-2026 23:39:05    |   INFO [root - <module>]   |   Image correctly setted inside the Encoder
-07-03-2026 23:39:08    |   INFO [root - set_secret_message]   |   Secret messagge loaded correctly!
-07-03-2026 23:39:08    |   INFO [root - <module>]   |   Secret message correctly setted inside the Encoder
-07-03-2026 23:39:08    |   INFO [root - encode]   |   Converting the secret message to binary (UTF-8)
-07-03-2026 23:39:08    |   INFO [root - message_to_bin]   |   Binary message: 0100100001101001
-07-03-2026 23:39:08    |   INFO [root - encode]   |   Conversion done!
-07-03-2026 23:39:08    |   INFO [root - encode]   |   Encoding the secret message inside the image
-07-03-2026 23:39:09    |   INFO [root - encode]   |   Evaluated 16 RGB channel values
-07-03-2026 23:39:09    |   INFO [root - encode]   |   Encoding completed!
-07-03-2026 23:39:09    |   INFO [root - <module>]   |   Secret message correctly encoded inside the image
+07-03-2026 23:58:10    |   INFO [root - <module>]   |   Calling image_to_bits
+07-03-2026 23:58:11    |   INFO [root - image_to_bits]   |   Evaluated 631584 RGB channel values
+07-03-2026 23:58:11    |   INFO [root - <module>]   |   image_to_bits completed!
+07-03-2026 23:58:11    |   INFO [root - <module>]   |   Image correctly setted inside the Encoder
+07-03-2026 23:58:14    |   INFO [root - set_secret_message]   |   Secret messagge loaded correctly!
+07-03-2026 23:58:14    |   INFO [root - <module>]   |   Secret message correctly setted inside the Encoder
+07-03-2026 23:58:14    |   INFO [root - encode]   |   Converting the secret message to binary (UTF-8)
+07-03-2026 23:58:14    |   INFO [root - message_to_bin]   |   Binary message: 0100100001101001
+07-03-2026 23:58:14    |   INFO [root - encode]   |   Conversion done!
+07-03-2026 23:58:14    |   INFO [root - encode]   |   Encoding the secret message inside the image
+07-03-2026 23:58:14    |   INFO [root - encode]   |   Evaluated 16 RGB channel values
+07-03-2026 23:58:14    |   INFO [root - encode]   |   Encoding completed!
+07-03-2026 23:58:14    |   INFO [root - <module>]   |   Secret message correctly encoded inside the image
+07-03-2026 23:58:14    |   INFO [root - <module>]   |   Generating encoded image
+07-03-2026 23:58:14    |   INFO [root - generate_encoded_image]   |   Evaluated 631584 RGB channel values
+07-03-2026 23:58:14    |   INFO [root - <module>]   |   Encoded image generated!
+08-03-2026 00:00:34    |   INFO [root - <module>]   |   Calling image_to_bits
+08-03-2026 00:00:35    |   INFO [root - image_to_bits]   |   Evaluated 631584 RGB channel values
+08-03-2026 00:00:35    |   INFO [root - <module>]   |   image_to_bits completed!
+08-03-2026 00:00:35    |   INFO [root - <module>]   |   Image correctly setted inside the Encoder
+08-03-2026 00:00:50    |   INFO [root - set_secret_message]   |   Secret messagge loaded correctly!
+08-03-2026 00:00:50    |   INFO [root - <module>]   |   Secret message correctly setted inside the Encoder
+08-03-2026 00:00:50    |   INFO [root - encode]   |   Converting the secret message to binary (UTF-8)
+08-03-2026 00:00:50    |   INFO [root - message_to_bin]   |   Binary message: 010000110110100101100001011011110010000001110011011011110110111001101111001000000111001101100001011011010111010101100101011011000010000001100011011011110110110101100101001000000111001101110100011000010110100100100000001111110010000001001001011011110010000001110100011101010111010001110100011011110010000001100010011001010110111001100101001000000111010001100101001000000110011101110010011000010111101001101001011001010010000000100001
+08-03-2026 00:00:50    |   INFO [root - encode]   |   Conversion done!
+08-03-2026 00:00:50    |   INFO [root - encode]   |   Encoding the secret message inside the image
+08-03-2026 00:00:50    |   INFO [root - encode]   |   Evaluated 432 RGB channel values
+08-03-2026 00:00:50    |   INFO [root - encode]   |   Encoding completed!
+08-03-2026 00:00:50    |   INFO [root - <module>]   |   Secret message correctly encoded inside the image
+08-03-2026 00:00:50    |   INFO [root - <module>]   |   Generating encoded image
+08-03-2026 00:00:50    |   INFO [root - generate_encoded_image]   |   Evaluated 631584 RGB channel values
+08-03-2026 00:00:50    |   INFO [root - <module>]   |   Encoded image generated!
