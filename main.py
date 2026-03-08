@@ -3,6 +3,7 @@ import numpy as np
 from typing import List, Any
 import logging
 from lsb_encoder_decoder.encoder import Encoder
+from lsb_encoder_decoder.decoder import Decoder
 
 def logging_config() -> None:  
   logging.basicConfig(level=logging.INFO,
@@ -39,6 +40,21 @@ def generate_encoded_image(encoded_image: List[List[List[Any]]]) -> bool:
     new_image.save("encoded_image.png")
     return True
   
+def message_from_image(decoded_image: List[List[List[str]]]) -> str:
+  cont = 0
+  secret_message = []
+  buffer = "0b"
+  for row in range(len(decoded_image)):
+    for rgb_channel in range(len(decoded_image[row])):
+      for idx,value in enumerate(decoded_image[row][rgb_channel]):
+        #print(f"original value: {value}, bin: {bin(value)}, 8_bit_bin: {bin(value).split('b')[1].zfill(8)}, 8_bit_bin_to_int: {int(bin(value).split('b')[1].zfill(8),2)}")
+        buffer += encoded_image[row][rgb_channel][idx].split("b")[1]
+        if len(buffer)>=10:
+          secret_message.append(buffer)
+          buffer = "0b"
+        cont += 1
+  return "".join(chr(int(word,2)) for word in secret_message)
+  
 
 if __name__ == "__main__":
   
@@ -71,4 +87,22 @@ if __name__ == "__main__":
     logging.info("Encoded image generated!")
   else:
     logging.error("Error while generating the encoded image!")
+    exit()
+    
+  decoder = Decoder()
+  if decoder.set_image(image_to_bits(encoded_image)):
+    logging.info("Image correctly setted inside the Decoder")
+    try:
+      decoded_image = decoder.decode()
+      logging.info("Secret message correctly decoded from the image")
+    except Exception:
+      logging.error("An error occurred while decoding the secret message from the given image")
+      exit()
+      
+  logging.info("Extracting secret message")
+  secret_message = message_from_image(decoded_image)
+  if secret_message:
+    logging.info(f"Secret message extracted: {secret_message}")
+  else:
+    logging.error("Error while extracting the secret message from the image!")
     exit()
