@@ -15,6 +15,7 @@ numpy
 PIL
 ```
 
+I know i could have done all of this in a much efficient and easier way but i wanted to manipulate the pixels using their 8-bit representation and not the python optimized ones. 
 
 **I DO NOT OWN ANY IMAGE THAT MIGHT BE INSIDE THIS REPOSITORY ONCE PUBLIC.**
 **I SIMPLY USED THEM TO TEST THE CODE.**
