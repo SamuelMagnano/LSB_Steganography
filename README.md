@@ -1,6 +1,7 @@
 Simple and naive approach to the LSB Steganography message encoding inside an image.
 
 I decided to do this mini-project just because i saw an IG reel talking about this tecnique and thought it was cool and easy enough to replicate given my almost absent understanding of cybersecurity since i'm majoring in AI.
+
 My approach to the problem always puts the secret messagge starting from the upper left corner of the image and is defined as follows:
 
 ![steganography](https://github.com/user-attachments/assets/c7763c61-db42-4e36-ad89-a3b69930e614)
