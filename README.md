@@ -7,7 +7,7 @@ My approach to the problem always puts the secret messagge starting from the upp
 ![steganography](https://github.com/user-attachments/assets/c7763c61-db42-4e36-ad89-a3b69930e614)
 
 
-With this code you just need a test-image.* (has to be RGB coded) and the following libraries:
+With this code you just need to have an image called test-image.* (has to be RGB coded) inside this folder and the following libraries:
 ```
 numpy
 ```
