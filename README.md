@@ -7,12 +7,19 @@ My approach to the problem always puts the secret message starting from the uppe
 ![steganography](https://github.com/user-attachments/assets/c7763c61-db42-4e36-ad89-a3b69930e614)
 
 
-With this code you just need to have an image called test-image.* (has to be RGB coded) inside this folder and the following libraries:
+With this code you just need to have an image called test-image.* (has to be RGB coded) inside this folder and proceed as follows:
+
+Access via terminal this folder and create the venv (virtual enviroment) inside of it
 ```
-numpy
+python -m venv venv
 ```
+Activate the venv
 ```
-PIL
+venv\Scripts\activate
+```
+Install the required libraries
+```
+pip install numpy pillow
 ```
 
 I know i could have done all of this in a much efficient and easier way but i wanted to manipulate the pixels using their 8-bit representation and not the python optimized ones. 
