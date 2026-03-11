@@ -15,13 +15,14 @@ class Decoder:
       return True
     return False
   
+  #returns the decoded image as its binary representation (all 0 except the least significant bit)
   def decode(self) -> List[List[List[str]]]:
     cont = 0
     logging.info("Decoding the secret message inside the image")
     for row in range(len(self.image)):
       for rgb_channel in range(len(self.image[row])):
-        for idx,value in enumerate(self.image[row][rgb_channel]):
-          result = bin(int(self.image[row][rgb_channel][idx],2) & int(self.mask,2))
+        for idx in range(len(self.image[row][rgb_channel])):
+          result = bin(int(self.image[row][rgb_channel][idx],2) & int(self.mask,2)) # 0b followed by all 0 except last one that is x -> python compresses to just 0bx
           self.image[row][rgb_channel][idx] = result
           cont += 1
     logging.info(f"Evaluated {cont} RGB channel values")
@@ -31,3 +32,18 @@ class Decoder:
     else: 
       logging.error("Error while decoding")
       raise Exception("Error while decoding")
+    
+  #return the secret message as string
+  def message_from_image(self) -> str:
+    cont = 0
+    secret_message = []
+    buffer = "0b"
+    for row in range(len(self.image)):
+      for rgb_channel in range(len(self.image[row])):
+        for idx in range(len(self.image[row][rgb_channel])):
+          buffer += self.image[row][rgb_channel][idx].split("b")[1]
+          if len(buffer)>=10:
+            secret_message.append(buffer)
+            buffer = "0b"
+          cont += 1
+    return "".join(chr(int(word,2)) for word in secret_message)
