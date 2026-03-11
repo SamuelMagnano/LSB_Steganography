@@ -6,8 +6,11 @@ My approach to the problem always puts the secret message starting from the uppe
 
 ![steganography](https://github.com/user-attachments/assets/c7763c61-db42-4e36-ad89-a3b69930e614)
 
+Inside this folder you will need to:
+- test image (test_image.jpg in the code), that has to be RGB coded
+- file .txt containing the secret message (if you do not want to pass the message through terminal)
 
-With this code you just need to have an image inside this folder (test_image.jpg in the code) that has to be RGB coded and then proceed as follows:
+Once all the above is set you can then proceed as follows:
 
 Access via terminal this folder and create the venv (virtual enviroment) inside of it
 ```
@@ -22,7 +25,7 @@ Install the required libraries
 pip install numpy pillow
 ```
 
-I know i could have done all of this in a much efficient and easier way but i wanted to manipulate the pixels using their 8-bit representation and not the python optimized ones. 
+I know i could have done all of this in a much efficient and easier way but i wanted to manipulate the pixels using their 8-bit representation and not the python optimized ones.
 
 **I DO NOT OWN ANY IMAGE THAT MIGHT BE INSIDE THIS REPOSITORY ONCE PUBLIC.**
 **I SIMPLY USED THEM TO TEST THE CODE.**
