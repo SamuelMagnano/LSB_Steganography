@@ -4,7 +4,7 @@ I decided to do this mini-project just because i saw an IG reel talking about th
 
 My approach to the problem always puts the secret message starting from the upper left corner of the image and is defined as follows:
 
-![steganography](https://github.com/user-attachments/assets/c7763c61-db42-4e36-ad89-a3b69930e614)
+![steganography](https://github.com/user-attachments/assets/6af96e4e-2750-460d-9a73-1dd00a873055)
 
 Inside this folder you will need to:
 - test image (test_image.jpg in the code), that has to be RGB coded
