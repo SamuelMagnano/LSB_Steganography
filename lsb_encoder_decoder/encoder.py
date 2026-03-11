@@ -1,5 +1,7 @@
-from typing import List
+from typing import List, Any
 import logging
+import numpy as np
+from PIL import Image
 
 class Encoder:
   image: List[List[List[str]]]
@@ -85,3 +87,20 @@ class Encoder:
     else: 
       logging.error("Error while encoding")
       raise Exception("Error while encoding")
+    
+  def generate_encoded_image(self, encoded_image: List[List[List[Any]]]) -> bool:
+    cont = 0
+    for row in range(len(encoded_image)):
+      for rgb_channel in range(len(encoded_image[row])):
+        for idx in range(len(encoded_image[row][rgb_channel])):
+          encoded_image[row][rgb_channel][idx] = int(encoded_image[row][rgb_channel][idx],2)
+          cont += 1
+    logging.info(f"Evaluated {cont} RGB channel values")
+    if cont <= 0: 
+      logging.warning("Error converting the bits back to integers!")
+      raise Exception("Error while converting the bits back to integers!")
+    else:
+      pixels_array = np.array(encoded_image, dtype=np.uint8)
+      new_image = Image.fromarray(pixels_array, 'RGB')
+      new_image.save("encoded_image.png")
+      return True

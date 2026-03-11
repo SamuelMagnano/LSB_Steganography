@@ -34,14 +34,14 @@ class Decoder:
       raise Exception("Error while decoding")
     
   #return the secret message as string
-  def message_from_image(self) -> str:
+  def message_from_image(self, decoded_image: List[List[List[str]]]) -> str:
     cont = 0
     secret_message = []
     buffer = "0b"
-    for row in range(len(self.image)):
-      for rgb_channel in range(len(self.image[row])):
-        for idx in range(len(self.image[row][rgb_channel])):
-          buffer += self.image[row][rgb_channel][idx].split("b")[1]
+    for row in range(len(decoded_image)):
+      for rgb_channel in range(len(decoded_image[row])):
+        for idx in range(len(decoded_image[row][rgb_channel])):
+          buffer += decoded_image[row][rgb_channel][idx].split("b")[1]
           if len(buffer)>=10:
             secret_message.append(buffer)
             buffer = "0b"
