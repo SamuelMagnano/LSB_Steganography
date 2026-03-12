@@ -1,3 +1,5 @@
+# Main concepts
+
 Simple and naive approach to the LSB Steganography message encoding inside an image.
 
 I decided to do this mini-project just because i saw an IG reel talking about this technique and thought it was cool and easy enough to replicate given my almost absent understanding of cybersecurity since i'm majoring in AI.
@@ -6,7 +8,9 @@ My approach to the problem always puts the secret message starting from the uppe
 
 ![steganography](https://github.com/user-attachments/assets/6af96e4e-2750-460d-9a73-1dd00a873055)
 
-Inside this folder you will need to:
+# How to run
+
+Inside this folder you will need:
 - test image (test_image.jpg in the code), that has to be RGB coded
 - file .txt containing the secret message (if you do not want to pass the message through terminal)
 
